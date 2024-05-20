@@ -4,11 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loans-landing-page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- Nagłówek -->
+    <header class="header container">
+        <a href="#" class="header__logo">Loans.com</a>
+        <nav>
+            <ul>
+                <li><a href="#">Rates & Feets</a></li>
+                <li><a href="#">How to applay</a></li>
+                <li><a href="#">Questions?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Część główna strony -->
+    <main class="main container">
+        <section class="main__intro">
+            <div class="intro__info">
+                <div class="info__small-heading">Personal Loan</div>
+                <h2 class="info__heading">Put your plans<br> into actions.</h2>
+                <div class="info__icons">
+                    <div class="icon__item">
+                        <span class="icon__text">Online application</span>
+                    </div>
+                    <div class="icon__item icon__text">
+                        <span class="icon__text">Up to $50.000</span>
+                    </div>
+                    <div class="icon__item">
+                        <span class="icon__text">The money is yours in 48h</span>
+                    </div>
+                </div>
+            </div>
+            <div class="intro__form">
+                <h3 class="form__heading">Let's change your life?</h3>
+                <form>
+                    <div class="form__field">
+                        <label for="name">Full name</label>
+                        <input type="text" class="form__input" id="name" placeholder="Jan Kowalski">
+                    </div>
+                    <div class="form__field">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form__input" id="email" placeholder="j.kowalski@wp.pl">
+                    </div>
+                    <div class="form__field">
+                        <label for="amount">How much do you need?</label>
+                        <input type="number" class="form__input" id="amount" placeholder="1,000">
+                    </div>
+                    <button type="submit" class="form__button">Check your rates</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
